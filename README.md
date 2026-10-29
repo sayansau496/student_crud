@@ -277,3 +277,5 @@ Flask uses the **Jinja2** template language inside HTML:
 ---
 
 *Sayan Sir's Tutorials (CoE Kolkata)*
+#   s t u d e n t _ c r u d  
+ 
