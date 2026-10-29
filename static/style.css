@@ -1,0 +1,120 @@
+/* Simple styling for the Student Management project */
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #f2f5f9;
+    color: #222;
+}
+
+header {
+    background: #1f3b73;
+    color: #fff;
+    text-align: center;
+    padding: 18px 10px;
+}
+header h1 { margin: 0 0 4px; font-size: 26px; }
+header p  { margin: 0; font-size: 14px; opacity: 0.85; }
+
+main {
+    max-width: 850px;
+    margin: 24px auto;
+    padding: 0 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 16px;
+    font-size: 13px;
+    color: #555;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    background: #1f3b73;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn-green { background: #2e9e4f; }
+.btn-blue  { background: #2b78d4; }
+.btn-red   { background: #d63b3b; }
+.btn-grey  { background: #7a7f87; }
+.btn:hover { opacity: 0.88; }
+
+/* Top bar with search + add button */
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+.search-form { display: flex; gap: 6px; }
+.search-form input {
+    padding: 8px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    width: 220px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+th, td {
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid #e3e6ea;
+}
+th { background: #e8edf6; }
+tr:hover td { background: #f7f9fc; }
+.actions { display: flex; gap: 6px; }
+.actions form { margin: 0; }
+.empty { text-align: center; color: #777; padding: 24px; }
+.count { color: #555; font-size: 14px; }
+
+/* Form */
+.student-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+    max-width: 440px;
+}
+.student-form label {
+    display: block;
+    margin: 12px 0 4px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.student-form input,
+.student-form select {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.form-buttons { margin-top: 18px; display: flex; gap: 8px; }
+
+/* Flash messages */
+.alert {
+    padding: 10px 14px;
+    border-radius: 5px;
+    margin-bottom: 14px;
+    font-size: 14px;
+}
+.alert.success { background: #dff3e5; color: #1d6b36; border: 1px solid #b6e0c2; }
+.alert.error   { background: #fbe1e1; color: #a02525; border: 1px solid #efb7b7; }
